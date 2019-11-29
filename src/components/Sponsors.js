@@ -1,11 +1,8 @@
-import React, { Component } from "react";
-class Sponsors extends Component {
-  render() {
-    return (
-      <div>
-        <h1>Sponsors</h1>
-      </div>
-    );
-  }
-}
-export default Sponsors;
+import React from "react";
+const sponsors = props => (
+  <div>
+    <h1> Sponsors</h1>
+  </div>
+);
+
+export default sponsors;

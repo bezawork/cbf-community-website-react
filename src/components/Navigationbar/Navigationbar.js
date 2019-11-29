@@ -30,7 +30,7 @@ class Navigationbar extends Component {
                 <FA name="bars" />
               </Navbar.Toggle>
               <Navbar.Collapse id="basic-navbar-nav">
-                <Nav className="navbar-nav text-uppercase ml-auto">
+                <Nav className="text-uppercase ml-auto">
                   <Nav.Item>
                     <LinkContainer to="/about">
                       <Nav.Link>About</Nav.Link>
