@@ -5,6 +5,13 @@ import "./theme.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import "bootstrap/dist/css/bootstrap.min.css";
+import WebFont from "webfontloader";
+
+WebFont.load({
+  google: {
+    families: ["Montserrat:300"]
+  }
+});
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
