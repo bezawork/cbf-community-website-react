@@ -6,7 +6,7 @@ const layout = props => (
 
   <Aux>
     <div></div>
-    <main>{props.children}</main>
+    {props.children}
   </Aux>
 );
 
