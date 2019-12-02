@@ -1,4 +1,5 @@
 import React from "react";
+
 const about = props => (
   <React.Fragment>
     <section id="about" class="page-section">
