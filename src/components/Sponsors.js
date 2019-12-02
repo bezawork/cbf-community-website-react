@@ -4,6 +4,7 @@ import SamSoftwareSolutions from "../assets/sam_software_solutions.svg";
 import MOOLogo from "../assets/MOO_Logo.png";
 import MadeTech from "../assets/made_tech.png";
 import BigPixel from "../assets/bigpixel.png";
+import Dxw from "../assets/dxw.jpg";
 
 const sponsors = props => (
   <React.Fragment>
@@ -83,7 +84,7 @@ const sponsors = props => (
           </div>
           <div class="col-lg-4 sponsor-image">
             <a class="" href="https://www.dxw.com/" target="_blank">
-              <img src="../assets/dxw.jpg" />
+              <img src={Dxw} />
             </a>
           </div>
           <div class="col-lg-4 sponsor-image">
