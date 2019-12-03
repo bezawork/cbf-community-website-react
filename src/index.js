@@ -4,7 +4,6 @@ import "./index.css";
 import "./theme.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import "bootstrap/dist/css/bootstrap.min.css";
 import WebFont from "webfontloader";
 
 WebFont.load({
