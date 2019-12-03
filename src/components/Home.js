@@ -26,9 +26,10 @@ const home = props => (
               href="https://www.meetup.com/Coding-Black-Females/"
               target="_blank"
             >
-              <FA name="users" size="4x">
-                <FA name="circle" size="2x"></FA>
-              </FA>
+              <span className="fa-stack fa-4x">
+                <FA name="circle" stack="2x"></FA>
+                <FA name="users" stack="1x" inverse></FA>
+              </span>
             </a>
             <h4 class="service-heading">Join Us</h4>
             <p class="text-muted">
@@ -37,9 +38,10 @@ const home = props => (
           </div>
           <div class="col-md-4">
             <a href="blog.html" target="_blank">
-              <FA name="blog" size="4x">
-                <FA name="circle" size="2x"></FA>
-              </FA>
+              <span className="fa-stack fa-4x">
+                <FA name="circle" stack="2x"></FA>
+                <FA name="blog" stack="1x" inverse></FA>
+              </span>
             </a>
             <h4 class="service-heading">Blog</h4>
             <p class="text-muted">
@@ -49,9 +51,10 @@ const home = props => (
           </div>
           <div class="col-md-4">
             <a href="contact.html">
-              <FA name="envelope" size="4x">
-                <FA name="circle" size="2x"></FA>
-              </FA>
+              <span className="fa-stack fa-4x">
+                <FA name="circle" stack="2x"></FA>
+                <FA name="envolope" stack="1x" inverse></FA>
+              </span>
             </a>
             <h4 class="service-heading">Get In Touch</h4>
             <p class="text-muted">
