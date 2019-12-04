@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./footer/Footer";
 const about = props => (
   <React.Fragment>
     <section id="about" class="page-section">
@@ -55,6 +56,7 @@ const about = props => (
         </div>
       </div>
     </section>
+    <Footer />
   </React.Fragment>
 );
 

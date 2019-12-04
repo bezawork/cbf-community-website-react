@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./footer/Footer";
 import DonateButton from "../assets/donatebutton.svg";
 const donate = props => (
   <React.Fragment>
@@ -62,6 +63,7 @@ const donate = props => (
         </div>
       </div>
     </section>
+    <Footer />
   </React.Fragment>
 );
 

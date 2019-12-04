@@ -1,8 +1,9 @@
 import React from "react";
+import Footer from "./footer/Footer";
 const blog = props => (
-  <div>
-    <h1> Blog</h1>
-  </div>
+  <React.Fragment>
+    <Footer />
+  </React.Fragment>
 );
 
 export default blog;

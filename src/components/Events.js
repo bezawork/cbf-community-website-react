@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./footer/Footer";
 const events = props => (
   <React.Fragment>
     <section id="events" class="page-section">
@@ -62,6 +63,7 @@ const events = props => (
         </div>
       </div>
     </section>
+    <Footer />
   </React.Fragment>
 );
 

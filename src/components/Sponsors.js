@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./footer/Footer";
 import MonzoLogosvg from "../assets/Monzo_logo_master_RGB_blue.svg";
 import SamSoftwareSolutions from "../assets/sam_software_solutions.svg";
 import MOOLogo from "../assets/MOO_Logo.png";
@@ -58,17 +59,17 @@ const sponsors = props => (
         <div class="row">
           <div class="col-lg-4 sponsor-image">
             <a class="" href="https://monzo.com" target="_blank">
-              <img src={MonzoLogosvg} height="50px" />
+              <img src={MonzoLogosvg} alt="monzo" height="50px" />
             </a>
           </div>
           <div class="col-lg-4 sponsor-image">
             <a class="" href="https://moo.com" target="_blank">
-              <img src={MOOLogo} />
+              <img src={MOOLogo} alt="MOO" />
             </a>
           </div>
           <div class="col-lg-4 sponsor-image">
             <a class="" href="https://madetech.com" target="_blank">
-              <img src={MadeTech} />
+              <img src={MadeTech} alt="MadeTech" />
             </a>
           </div>
         </div>
@@ -79,22 +80,23 @@ const sponsors = props => (
               href="https://www.bigpixelstudios.co.uk/"
               target="_blank"
             >
-              <img src={BigPixel} />
+              <img src={BigPixel} alt="Big pixel" />
             </a>
           </div>
           <div class="col-lg-4 sponsor-image">
             <a class="" href="https://www.dxw.com/" target="_blank">
-              <img src={Dxw} />
+              <img src={Dxw} alt="DXW" />
             </a>
           </div>
           <div class="col-lg-4 sponsor-image">
             <a class="" href="https://www.samsoftware.com/" target="_blank">
-              <img src={SamSoftwareSolutions} />
+              <img src={SamSoftwareSolutions} alt="samsoftware" />
             </a>
           </div>
         </div>
       </div>
     </section>
+    <Footer />
   </React.Fragment>
 );
 

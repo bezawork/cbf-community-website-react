@@ -1,7 +1,7 @@
 import React from "react";
 import Cbflogowhite from "../assets/cbf_logo_white.svg";
 import FA from "react-fontawesome";
-import styled from "styled-components";
+import Footer from "./footer/Footer";
 
 const home = props => (
   <React.Fragment>
@@ -65,6 +65,7 @@ const home = props => (
         </div>
       </div>
     </section>
+    <Footer />
   </React.Fragment>
 );
 

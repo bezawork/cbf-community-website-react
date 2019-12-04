@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./footer/Footer";
 const testimonials = props => (
   <React.Fragment>
     <section id="testimonials" class="page-section">
@@ -27,6 +28,7 @@ const testimonials = props => (
         </div>
       </div>
     </section>
+    <Footer />
   </React.Fragment>
 );
 

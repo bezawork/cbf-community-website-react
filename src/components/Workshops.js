@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./footer/Footer";
 const workshops = props => (
   <React.Fragment>
     <section id="workshops" class="page-section">
@@ -104,6 +105,7 @@ const workshops = props => (
         </div>
       </div>
     </section>
+    <Footer />
   </React.Fragment>
 );
 
