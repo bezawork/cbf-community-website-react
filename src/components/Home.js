@@ -6,9 +6,9 @@ import Footer from "./footer/Footer";
 const home = props => (
   <React.Fragment>
     <header className="masthead">
-      <div class="container">
-        <div class="intro-text">
-          <div class="intro-lead-in">
+      <div className="container">
+        <div className="intro-text">
+          <div className="intro-lead-in">
             <img src={Cbflogowhite} alt="logowhite"></img>
           </div>
         </div>
@@ -19,9 +19,9 @@ const home = props => (
       </div>
     </header>
     <section id="home">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-md-4">
+      <div className="container">
+        <div className="row text-center">
+          <div className="col-md-4">
             <a
               href="https://www.meetup.com/Coding-Black-Females/"
               target="_blank"
@@ -31,8 +31,8 @@ const home = props => (
                 <FA name="users" stack="1x" inverse></FA>
               </span>
             </a>
-            <h4 class="service-heading">Join Us</h4>
-            <p class="text-muted">
+            <h4 className="service-heading">Join Us</h4>
+            <p className="text-muted">
               Are you a Coding Black Female? Join us, come along to our meetups.
             </p>
           </div>
