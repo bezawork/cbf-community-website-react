@@ -60,14 +60,16 @@ class Blog extends Component {
                     class="col-6"
                     key={item.title}
                   >
-                    <img
-                      src={item.picture.replace(
-                        "/max/${size}/",
-                        "/fit/1080/607/"
-                      )}
-                      width="100%"
-                      alt="featured picture"
-                    ></img>
+                    {item.picture && (
+                      <img
+                        src={item.picture.replace(
+                          "/max/${size}/",
+                          "/fit/1080/607/"
+                        )}
+                        width="100%"
+                        alt="featured picture"
+                      ></img>
+                    )}
                     <p
                       style={{
                         margin: "0em",
@@ -127,17 +129,19 @@ class Blog extends Component {
                         {item.claps}
                       </span>
 
-                      <span
-                        style={{
-                          opacity: 0.7
-                        }}
-                      >
-                        {new Date(item.publishAt).toLocaleString("default", {
-                          year: "numeric",
-                          month: "short",
-                          day: "numeric"
-                        })}
-                      </span>
+                      {item.publishAt && (
+                        <span
+                          style={{
+                            opacity: 0.7
+                          }}
+                        >
+                          {new Date(item.publishAt).toLocaleString("default", {
+                            year: "numeric",
+                            month: "short",
+                            day: "numeric"
+                          })}
+                        </span>
+                      )}
                     </p>
                   </div>
                 ))}
