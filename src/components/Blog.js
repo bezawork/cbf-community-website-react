@@ -56,7 +56,7 @@ class Blog extends Component {
               <div class="row">
                 {items.map(item => (
                   <div
-                    style={{ margin: "0em 0em 2em 0em " }}
+                    style={{ margin: "0em 0em 2em 0em" }}
                     class="col-6"
                     key={item.title}
                   >
@@ -70,11 +70,13 @@ class Blog extends Component {
                     ></img>
                     <p
                       style={{
-                        margin: "0em ",
-                        fontSize: "1.5em"
+                        margin: "0em",
+                        marginBottom: "0.4em",
+                        fontSize: "1.1em",
+                        lineHeight: "1.2"
                       }}
                     >
-                      <strong> {item.title}</strong>{" "}
+                      <strong>{item.title}</strong>{" "}
                     </p>
                     <p
                       style={{
@@ -87,35 +89,49 @@ class Blog extends Component {
                       {item.description}
                     </p>
                     <p style={{ margin: "0em ", fontSize: "0.9em" }}>
-                      <img
-                        src={item.avatar}
-                        width="30em"
-                        style={{ borderRadius: "10em", marginRight: "0.5em" }}
-                        alt="Avatar"
-                      ></img>
-                      {item.author}
-                      <img
-                        src={LikeIcon}
-                        width="20em"
-                        alt="Like icon"
-                        style={{ marginLeft: "0.5em" }}
-                      ></img>
-                      {item.likes}
-                      <img
-                        src={ClapIcon}
-                        width="20em"
-                        alt="Clap icon"
-                        style={{ marginLeft: "0.5em", paddingBottom: "0.5em" }}
-                      ></img>
-                      {item.claps}
+                      <span style={{ marginRight: "0.5em" }}>
+                        <img
+                          src={item.avatar}
+                          width="30em"
+                          style={{ borderRadius: "10em", marginRight: "0.5em" }}
+                          alt="Avatar"
+                        ></img>
+                        {item.author}
+                      </span>
+                      <span
+                        style={{
+                          display: "inline-block",
+                          marginRight: "0.5em"
+                        }}
+                      >
+                        <img
+                          src={LikeIcon}
+                          width="15em"
+                          alt="Like icon"
+                          style={{ marginTop: "-0.2em" }}
+                        ></img>
+                        {item.likes}
+                      </span>
+                      <span
+                        style={{
+                          display: "inline-block",
+                          marginRight: "0.5em"
+                        }}
+                      >
+                        <img
+                          src={ClapIcon}
+                          width="15em"
+                          alt="Clap icon"
+                          style={{ marginTop: "-0.2em" }}
+                        ></img>
+                        {item.claps}
+                      </span>
 
                       <span
                         style={{
-                          marginLeft: "0.5em",
                           opacity: 0.7
                         }}
                       >
-                        {" "}
                         {new Date(item.publishAt).toLocaleString("default", {
                           year: "numeric",
                           month: "short",
