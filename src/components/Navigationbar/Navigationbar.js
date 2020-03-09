@@ -4,7 +4,8 @@ import { Nav, Navbar, Container, Dropdown } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import { withRouter } from "react-router-dom";
 import styled from "styled-components";
-import FA from "react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Styles = styled.div`
   .navbar {
@@ -34,7 +35,7 @@ class Navigationbar extends Component {
                 data-toggle="collapse"
               >
                 Menu &nbsp;
-                <FA name="bars" />
+                <FontAwesomeIcon icon={faBars} />
               </Navbar.Toggle>
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="text-uppercase ml-auto">

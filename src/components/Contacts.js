@@ -1,5 +1,12 @@
 import React from "react";
-import FA from "react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faInstagram,
+  faTwitter,
+  faFacebook,
+  faLinkedin
+} from "@fortawesome/free-brands-svg-icons";
 const contacts = props => (
   <React.Fragment>
     <section id="contact" class="page-section">
@@ -21,35 +28,35 @@ const contacts = props => (
             </p>
             <div id="contact-section" className="row">
               <a href="mailto:info@codingblackfemales.com?Subject=Contact Us">
-                <FA name="envelope" />
+                <FontAwesomeIcon icon={faEnvelope} />
               </a>
               <a
                 href="https://www.instagram.com/codingblackfemales/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FA name="instagram" />
+                <FontAwesomeIcon icon={faInstagram} />
               </a>
               <a
                 href="https://twitter.com/codingblackfems"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FA name="twitter" />
+                <FontAwesomeIcon icon={faTwitter} />
               </a>
               <a
                 href="https://www.facebook.com/codingblackfemales"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FA name="facebook" />
+                <FontAwesomeIcon icon={faFacebook} />
               </a>
               <a
                 href="https://linkedin.com/company/codingblackfemales"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FA name="linkedin" />
+                <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </div>
           </div>

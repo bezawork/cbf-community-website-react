@@ -1,7 +1,13 @@
 import React from "react";
 import Cbflogowhite from "../assets/cbf_logo_white.svg";
-import FA from "react-fontawesome";
 import Footer from "./footer/Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCircle,
+  faBlog,
+  faUsers,
+  faEnvelope
+} from "@fortawesome/free-solid-svg-icons";
 
 const home = props => (
   <React.Fragment>
@@ -27,9 +33,13 @@ const home = props => (
               target="_blank"
               rel="noopener noreferrer"
             >
-              <span className="fa-stack fa-4x">
-                <FA name="circle" stack="2x"></FA>
-                <FA name="users" stack="1x" inverse></FA>
+              <span className="fa-8x fa-layers">
+                <FontAwesomeIcon icon={faCircle} />
+                <FontAwesomeIcon
+                  icon={faUsers}
+                  transform="shrink-8 left-2"
+                  inverse
+                />
               </span>
             </a>
             <h4 className="service-heading">Join Us</h4>
@@ -39,9 +49,9 @@ const home = props => (
           </div>
           <div class="col-md-4">
             <a href="blog.html" target="_blank" rel="noopener noreferrer">
-              <span className="fa-stack fa-4x">
-                <FA name="circle" stack="2x"></FA>
-                <FA name="rss" stack="1x" inverse></FA>
+              <span className="fa-8x fa-layers">
+                <FontAwesomeIcon icon={faCircle} />
+                <FontAwesomeIcon icon={faBlog} transform="shrink-8" inverse />
               </span>
             </a>
             <h4 class="service-heading">Blog</h4>
@@ -52,9 +62,13 @@ const home = props => (
           </div>
           <div class="col-md-4">
             <a href="contact.html">
-              <span className="fa-stack fa-4x">
-                <FA name="circle" stack="2x"></FA>
-                <FA name="envolope" stack="1x" inverse></FA>
+              <span className="fa-8x fa-layers">
+                <FontAwesomeIcon icon={faCircle} />
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  transform="shrink-8"
+                  inverse
+                />
               </span>
             </a>
             <h4 class="service-heading">Get In Touch</h4>

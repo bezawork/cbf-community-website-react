@@ -1,5 +1,11 @@
 import React from "react";
-import FA from "react-fontawesome";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInstagram,
+  faTwitter,
+  faFacebook,
+  faLinkedin
+} from "@fortawesome/free-brands-svg-icons";
 const Footer = props => (
   <React.Fragment>
     <footer>
@@ -13,7 +19,7 @@ const Footer = props => (
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FA name="instagram" size="sm" />
+                  <FontAwesomeIcon icon={faInstagram} size="sm" />
                 </a>
               </li>
               <li class="list-inline-item">
@@ -22,7 +28,7 @@ const Footer = props => (
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FA name="twitter" size="sm" />
+                  <FontAwesomeIcon icon={faTwitter} size="sm" />
                 </a>
               </li>
               <li class="list-inline-item">
@@ -31,7 +37,7 @@ const Footer = props => (
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FA name="facebook" size="sm" />
+                  <FontAwesomeIcon icon={faFacebook} size="sm" />
                 </a>
               </li>
               <li class="list-inline-item">
@@ -40,7 +46,7 @@ const Footer = props => (
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FA name="linkedin" size="sm" />
+                  <FontAwesomeIcon icon={faLinkedin} size="sm" />
                 </a>
               </li>
             </ul>
