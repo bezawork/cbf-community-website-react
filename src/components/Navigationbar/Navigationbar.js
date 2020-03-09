@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import Logofornavbar from "../../assets/Logofornavbar.svg";
-import { Nav, Navbar, Container } from "react-bootstrap";
+import { Nav, Navbar, Container, Dropdown } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+import { withRouter } from "react-router-dom";
 import styled from "styled-components";
 import FA from "react-fontawesome";
 
@@ -13,6 +14,12 @@ const Styles = styled.div`
 
 class Navigationbar extends Component {
   render() {
+    const inMemberZone = [
+      "/events",
+      "/programmes",
+      "/jobboard",
+      "/discounts"
+    ].includes(this.props.location.pathname);
     return (
       <Styles>
         <Nav defaultActiveKey="/">
@@ -51,11 +58,28 @@ class Navigationbar extends Component {
                       <Nav.Link>Workshops</Nav.Link>
                     </LinkContainer>
                   </Nav.Item>
-                  <Nav.Item>
-                    <LinkContainer to="/events">
-                      <Nav.Link>Events</Nav.Link>
-                    </LinkContainer>
-                  </Nav.Item>
+                  <Dropdown as={Nav.Item}>
+                    <Dropdown.Toggle
+                      as={Nav.Link}
+                      className={inMemberZone ? "active" : null}
+                    >
+                      Member zone
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                      <LinkContainer to="/events">
+                        <Dropdown.Item>OUR EVENTS</Dropdown.Item>
+                      </LinkContainer>
+                      <LinkContainer to="/programmes">
+                        <Dropdown.Item>OUR PROGRAMMES</Dropdown.Item>
+                      </LinkContainer>
+                      <LinkContainer to="/jobboard">
+                        <Dropdown.Item>JOB BOARD</Dropdown.Item>
+                      </LinkContainer>
+                      <LinkContainer to="/discounts">
+                        <Dropdown.Item>DISCOUNTS</Dropdown.Item>
+                      </LinkContainer>
+                    </Dropdown.Menu>
+                  </Dropdown>
                   <Nav.Item>
                     <LinkContainer to="/sponsors">
                       <Nav.Link>Sponsors</Nav.Link>
@@ -81,4 +105,4 @@ class Navigationbar extends Component {
   }
 }
 
-export default Navigationbar;
+export default withRouter(props => <Navigationbar {...props} />);
