@@ -45,6 +45,7 @@ const events = props => (
                   <a
                     href="https://www.meetup.com/Coding-Black-Females/events/266088407/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn btn-primary"
                   >
                     Sign Up on Meetup
@@ -52,6 +53,7 @@ const events = props => (
                   <a
                     href="https://www.eventbrite.co.uk/e/coding-black-females-christmas-party-tickets-84160104137"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn btn-primary"
                   >
                     Sign Up on Eventbrite

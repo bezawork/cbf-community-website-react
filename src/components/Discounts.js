@@ -51,6 +51,7 @@ const discounts = props => (
                 <a
                   href="https://generalassemb.ly/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="btn btn-primary"
                 >
                   General Assembly

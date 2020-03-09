@@ -25,6 +25,7 @@ const home = props => (
             <a
               href="https://www.meetup.com/Coding-Black-Females/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <span className="fa-stack fa-4x">
                 <FA name="circle" stack="2x"></FA>
@@ -37,10 +38,10 @@ const home = props => (
             </p>
           </div>
           <div class="col-md-4">
-            <a href="blog.html" target="_blank">
+            <a href="blog.html" target="_blank" rel="noopener noreferrer">
               <span className="fa-stack fa-4x">
                 <FA name="circle" stack="2x"></FA>
-                <FA name="blog" stack="1x" inverse></FA>
+                <FA name="rss" stack="1x" inverse></FA>
               </span>
             </a>
             <h4 class="service-heading">Blog</h4>

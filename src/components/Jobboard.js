@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "./footer/Footer";
+import { Link } from "react-router-dom";
 const jobboard = props => (
   <React.Fragment>
     <div
@@ -62,6 +63,7 @@ const jobboard = props => (
                   <a
                     href="https://drive.google.com/file/d/1Yo7ku-HZFWmFuVVAhdXQJQ3RC4XGYWI1/view?usp=sharing"
                     target="_blank"
+                    rel="noopener noreferrer"
                     class="btn btn-primary"
                   >
                     Apprenticeship Description
@@ -72,20 +74,21 @@ const jobboard = props => (
                     margin: "0em 1em 0em 0em"
                   }}
                 >
-                  <a
-                    href="#"
+                  <Link
+                    to={`/jobboard`}
                     data-toggle="modal"
                     data-target="#exampleModal"
                     data-whatever="@mdo"
                     class="btn btn-primary"
                   >
                     Interview Process
-                  </a>
+                  </Link>
                 </span>
 
                 <a
                   href="https://hire.withgoogle.com/public/jobs/codurancecom/view/P_AAAAABlAABNOcIsijEdYoW"
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="btn btn-primary"
                 >
                   Apply

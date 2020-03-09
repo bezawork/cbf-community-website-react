@@ -58,17 +58,32 @@ const sponsors = props => (
         </div>
         <div class="row">
           <div class="col-lg-4 sponsor-image">
-            <a class="" href="https://monzo.com" target="_blank">
+            <a
+              class=""
+              href="https://monzo.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={MonzoLogosvg} alt="monzo" height="50px" />
             </a>
           </div>
           <div class="col-lg-4 sponsor-image">
-            <a class="" href="https://moo.com" target="_blank">
+            <a
+              class=""
+              href="https://moo.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={MOOLogo} alt="MOO" />
             </a>
           </div>
           <div class="col-lg-4 sponsor-image">
-            <a class="" href="https://madetech.com" target="_blank">
+            <a
+              class=""
+              href="https://madetech.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={MadeTech} alt="MadeTech" />
             </a>
           </div>
@@ -79,17 +94,28 @@ const sponsors = props => (
               class=""
               href="https://www.bigpixelstudios.co.uk/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img src={BigPixel} alt="Big pixel" />
             </a>
           </div>
           <div class="col-lg-4 sponsor-image">
-            <a class="" href="https://www.dxw.com/" target="_blank">
+            <a
+              class=""
+              href="https://www.dxw.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={Dxw} alt="DXW" />
             </a>
           </div>
           <div class="col-lg-4 sponsor-image">
-            <a class="" href="https://www.samsoftware.com/" target="_blank">
+            <a
+              class=""
+              href="https://www.samsoftware.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src={SamSoftwareSolutions} alt="samsoftware" />
             </a>
           </div>

@@ -34,13 +34,21 @@ const workshops = props => (
             <p>
               When you arrive, get settled in, and get your laptop setup. We
               recommend downloading{" "}
-              <a href="https://code.visualstudio.com/download" target="_blank">
+              <a
+                href="https://code.visualstudio.com/download"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 VS Code
               </a>
               , but if you have another favourite development environment, then
               use that instead. If you want to contribute to our project, you’ll
               need a GitHub account, and you can take a look at our{" "}
-              <a href="https://github.com/CodingBlackFemales" target="_blank">
+              <a
+                href="https://github.com/CodingBlackFemales"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Coding Black Females GitHub
               </a>
               .
@@ -72,6 +80,7 @@ const workshops = props => (
                 <a
                   href="https://code.visualstudio.com/download"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Code Editor - VS Code:{" "}
                 </a>
@@ -83,7 +92,11 @@ const workshops = props => (
             <h4 class="detail-subheading">Learner?</h4>
             <ul>
               <li>
-                <a href="http://tutorials.codebar.io/" target="_blank">
+                <a
+                  href="http://tutorials.codebar.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Codebar Tutorials
                 </a>
               </li>
@@ -91,12 +104,20 @@ const workshops = props => (
             <h4 class="detail-subheading">Coder?</h4>
             <ul>
               <li>
-                <a href="https://github.com" target="_blank">
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   GitHub
                 </a>
               </li>
               <li>
-                <a href="https://github.com/CodingBlackFemales" target="_blank">
+                <a
+                  href="https://github.com/CodingBlackFemales"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Coding Black Females GitHub
                 </a>
               </li>

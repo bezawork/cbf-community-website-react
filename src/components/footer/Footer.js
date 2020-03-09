@@ -11,12 +11,17 @@ const Footer = props => (
                 <a
                   href="https://www.instagram.com/codingblackfemales/"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FA name="instagram" size="sm" />
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://twitter.com/codingblackfems" target="_blank">
+                <a
+                  href="https://twitter.com/codingblackfems"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FA name="twitter" size="sm" />
                 </a>
               </li>
@@ -24,6 +29,7 @@ const Footer = props => (
                 <a
                   href="https://facebook.com/codingblackfemales"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FA name="facebook" size="sm" />
                 </a>
@@ -32,6 +38,7 @@ const Footer = props => (
                 <a
                   href="https://linkedin.com/company/codingblackfemales"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FA name="linkedin" size="sm" />
                 </a>

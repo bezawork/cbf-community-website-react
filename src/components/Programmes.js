@@ -55,6 +55,7 @@ const programmes = props => (
                 <a
                   href="https://forms.gle/D2F9j3me33fFapcc8"
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="btn btn-primary"
                 >
                   Apply
@@ -87,6 +88,7 @@ const programmes = props => (
                 <a
                   href="https://forms.gle/kVroXrCjiQu6SMjj8"
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="btn btn-primary"
                 >
                   Register your interest
@@ -125,6 +127,7 @@ const programmes = props => (
                 <a
                   href="https://doitnownow.typeform.com/to/q6nlJ8"
                   target="_blank"
+                  rel="noopener noreferrer"
                   class="btn btn-primary"
                 >
                   Productivity Quiz

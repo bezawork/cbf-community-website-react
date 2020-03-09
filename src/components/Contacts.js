@@ -26,21 +26,28 @@ const contacts = props => (
               <a
                 href="https://www.instagram.com/codingblackfemales/"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FA name="instagram" />
               </a>
-              <a href="https://twitter.com/codingblackfems" target="_blank">
+              <a
+                href="https://twitter.com/codingblackfems"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FA name="twitter" />
               </a>
               <a
                 href="https://www.facebook.com/codingblackfemales"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FA name="facebook" />
               </a>
               <a
                 href="https://linkedin.com/company/codingblackfemales"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <FA name="linkedin" />
               </a>
