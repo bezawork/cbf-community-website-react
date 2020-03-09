@@ -63,11 +63,11 @@ class Blog extends Component {
                     {item.picture && (
                       <img
                         src={item.picture.replace(
-                          "/max/${size}/",
-                          "/fit/1080/607/"
+                          `/max/\${size}/`,
+                          `/fit/1080/607/`
                         )}
                         width="100%"
-                        alt="featured picture"
+                        alt="featured"
                       ></img>
                     )}
                     <p
